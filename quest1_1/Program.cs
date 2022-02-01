@@ -23,7 +23,13 @@ namespace quest1_1
             int n;
             Console.WriteLine("Input number: ");
             n = Int32.Parse(Console.ReadLine());
-            SimpleNumber(n);
+            if (SimpleNumber(n) == true)
+                {
+                Console.WriteLine("\n Number " + n + " is simple");
+                } 
+            else
+                Console.WriteLine("\n Number " + n + " is not simple");
+
         }
     }
 }
